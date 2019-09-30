@@ -2,13 +2,19 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Poppins:200,300,400,500,600,700|Roboto:300,400,500,700");
 
 *{
+    box-sizing:border-box;
     outline:none !important;
 }
 body{
-  font-family:'Poppins',san-serif;
+  font-family:'Arial',san-serif;
  
 }
-
+h1{
+    font-family: arial;
+    font-style:oblique;
+    color:white;
+    text-align: center;
+}
 header{
     position:relative;
     z-index:1000000;
