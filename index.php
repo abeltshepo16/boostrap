@@ -4,6 +4,7 @@
   <title>Noobie Website</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -114,8 +115,19 @@ a {
       text-decoration: underline;
   }
   
+  hr{
+   border-bottom:1px solid darkgrey;
+   width:90%;
+  }
+  #contact{
+      height:100vh;
+  }
   form{
-    transform: translate(50%,0%);
+    transform: translate(0%,0%);
+}
+footer{
+    background-color: cyan;
+    font-family:sans-serif;
 }
 .single-footer-widget {
     transform: translate(50%,30%);
@@ -123,6 +135,32 @@ a {
               .para {
     transform: translate(30%,0%);
 }
+
+icon-bar{
+    width:100%;
+}
+ 
+.icon-bar a{
+	display: inline-block;
+	width: 53px;
+	height: 65px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 50%;
+      transform: translate(-50%,-50%);
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+        padding:14px;
+	margin-right: 21px;
+	margin-bottom: 5px;
+}
+
+.icon-bar a:hover {
+  background-color: blue;
+}
+
 @media  screen and (max-width: 425px) {
   .hm{
     float: none;
@@ -177,10 +215,10 @@ a {
       <a class="nav-link" data-toggle="tab" href="#services">SERVICES</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#community">COMMUNITY</a>
+      <a class="nav-link" data-toggle="tab" href="#seeds">SEEDS</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" data-toggle="tab" href="#seeds">SEEDS</a>
+      <a class="nav-link" data-toggle="tab" href="#community">COMMUNITY</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" data-toggle="tab" href="#contact">CONTACT</a>
@@ -251,7 +289,7 @@ a {
   </div>
 </div>
     </div>
-    <div id="community" class="container-fluid tab-pane pb-5"><br>
+    <div id="seeds" class="container-fluid tab-pane pb-5"><br>
       <div class="container-fluid">
 <div class="row">
  <div class="col-sm-6">
@@ -310,12 +348,52 @@ a {
  </div>
 </div>
       </div>
+    <div id="community" class=" container-fluid bg-light col-lg-12 text-center p-5">
+<div class="container-fluid">
+<h1 class="hm">Community Calender</h1>
+  <div class="row">
+  <p class=" col-lg-12">Our community garden is open daily for your convenience (January - November).We offer classes<br>
+      and tours on the weekends and community mixers on Friday nights.Space for most classes is <br>
+      limited so please call or email to reserve your spot if you would like to teach a class or suggest<br>
+      an event,please reach out!</p>
+    <div class="col-sm-4 col-lg-2">
+ <h6>Fri</h6>        
+    <p>Sep</p>
+     <p>6th</p>
+    </div>
+    <div class="col-sm-4 col-lg-6">
+      <h4>Maintain Your Plot</h4>
+    <p>Visit your plot anytime throughout the day to plant seeds maintain your<br>
+        plant's growth  etc.We open early in the morning ...</p>
+    </div>
+    <div class="col-sm-4 col-lg-4">
+     <h4>7:00AM-7:00PM</h4>
+     <p>180 W Brits R152,South Africa</p>
+    </div>
+    <hr/>
+    <div class="col-sm-4 col-lg-2">
+      <h6>Fri</h6>
+    <p>Sep</p>
+     <p>6th</p>
+    </div>
+    <div class="col-sm-4 col-lg-6">
+      <h4>Garden and Balos School Tours with Tshepo</h4>
+   <p>Planning  a field trip?Sustainability and health education is important for <br>students of all ages visit our garden and see what we have grown...</p> 
+    </div>
+    <div class="col-sm-4 col-lg-4">
+      <h4>7:00AM-7:00PM</h4>
+     <p>180 W Brits R152,South Africa</p>      
+    </div>
+  </div>
+</div>
+</div>
       
  
-    <div id="contact" class="container-fluid tab-pane bg-transparent pb-5 "><br>
+    <div id="contact" class="container-fluid tab-pane bg-transparent  "><br>
+        <h2 class="hc">CONTACT</h2>
 <div class="container-fluid ">
-    <h2 class="hc">CONTACT</h2>
-    <div class="col-md-6 col-sm-12">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 p-6">
   <form action="/action_page.php" class="needs-validation " novalidate>
     <div class="form-group">
       <label for="uname">Username:</label>
@@ -346,18 +424,27 @@ a {
   </form>
 </div>
 
-    <div class="col-lg-5 col-md-6 col-sm-8 offset-lg-1">
-                        <div class="single-footer-widget contact_wd">
-                            <h6 class="footer_title">ADDRESS</h6>
-                            <p>73 juta street braamfontein,<br> Johannesburg, Republic of South Africa<br>2001</p>
-                            <a href="tel:+27 000000000">Contact:+27 735-231-123</a>
-                            <a href="email:info@abedesigns.co.za">Email:info@abedesigns.co.za</a>
-             
-        </div>
+    
+        <div class="cont-sec">
+            <h2 class="h2-con">Volunteer Opportunities</h2>
+    <p class="par1">
+        You would be helping us dig plant,weed and grow the garden.Volunteers are welcome<br> during the week and are recommended to bring water,sunscreen,<br>comfortable clothing and close-toed shoes. 
+    </p>
+  
+  <div class="par2">
+    <h2>Light Construction</h2>
+    Our community often share or have their own plots.We need assistance with <br> building and maintaining the construction of plots and other things in our <br> garden.
+    </div>
+    
+  <div class="par3">
+    <h2 class="h2">Classes</h2>
+    <p>If you would like to teach a class feel free to send us your ideas.</p>
+     </div>
+    </div>
      </div> 
     </div>
     </div>
-          <footer class="container-fluid footer-area bg-light p-5 p_120 col-sm-12"><br>    
+          <footer class="container-fluid footer-area bg-cyan p-2 p_120 col-sm-12"><br>    
 
             <div class="container-fluid">
                 <div class="row footer-bottom d-flex justify-content-between bg-light-grey p-0">
@@ -365,12 +452,23 @@ a {
                         <p class="para">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Imagined by <a href="http://www.balos.co.za" target="_blank">Balos</a>
 </p>
-                    <div class="col-lg-4 col-md-4 footer-social">
+       
+                        <div class="single-footer-widget contact_wd">
+                            <h6 class="footer_title">ADDRESS</h6>
+                            <p>73 juta street braamfontein, Johannesburg, Republic of South Africa 2001</p>
+                            <a href="tel:+27 735231123">Contact:+27 735-231-123</a>
+                            <a href="email:info@abedesigns.co.za">Email:info@abedesigns.co.za</a>
+             
+                              </div>
+                    <div class="col-lg-6 col-md-6 footer-social">
+                        <div class="icon-bar">
                        <a href="#"><i class="fa fa-facebook"></i></a>
                          <a href="#"><i class="fa fa-youtube"></i></a>
                          <a href="#"><i class="fa fa-twitter"></i></a>
                          <a href="#"><i class="fa fa-instagram"></i></a>
                          <a href="#"><i class="fa fa-google"></i></a>
+                          <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    </div>
                     </div>
                 </div>
             </div>
