@@ -120,10 +120,14 @@ a {
    width:90%;
   }
   #contact{
-      height:100vh;
+      height:80vh;
   }
   form{
-    transform: translate(0%,0%);
+    transform: translate(2%,20%);
+}
+.cont-sec{
+     transform: translate(12%,20%);
+     margin:10px;
 }
 footer{
     background-color: cyan;
@@ -147,7 +151,7 @@ icon-bar{
 	cursor: pointer;
 	background-color:  #33383b;
 	border-radius: 50%;
-      transform: translate(-50%,-50%);
+        transform: translate(100%,-45%);
 	font-size: 30px;
 	color: #ffffff;
 	text-align: center;
@@ -159,6 +163,15 @@ icon-bar{
 
 .icon-bar a:hover {
   background-color: blue;
+}
+
+.icon_title{
+    text-align:center;
+    margin-block-start: -3.33em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:sans-serif;
 }
 
 @media  screen and (max-width: 425px) {
@@ -428,12 +441,16 @@ icon-bar{
         <div class="cont-sec">
             <h2 class="h2-con">Volunteer Opportunities</h2>
     <p class="par1">
-        You would be helping us dig plant,weed and grow the garden.Volunteers are welcome<br> during the week and are recommended to bring water,sunscreen,<br>comfortable clothing and close-toed shoes. 
+        You would be helping us dig plant,weed and grow the garden.Volunteers are <br>
+        welcome during the week and are recommended to bring water,sunscreen,<br>
+        comfortable clothing and close-toed shoes. 
     </p>
   
   <div class="par2">
     <h2>Light Construction</h2>
-    Our community often share or have their own plots.We need assistance with <br> building and maintaining the construction of plots and other things in our <br> garden.
+    Our community often share or have their own plots.We need assistance with <br>
+    building and maintaining the construction of plots and other things in our <br>
+    garden.
     </div>
     
   <div class="par3">
@@ -461,6 +478,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
              
                               </div>
                     <div class="col-lg-6 col-md-6 footer-social">
+                        <h5 class="icon_title">Find us here on:</h5>
                         <div class="icon-bar">
                        <a href="#"><i class="fa fa-facebook"></i></a>
                          <a href="#"><i class="fa fa-youtube"></i></a>
